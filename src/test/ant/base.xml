@@ -1,0 +1,22 @@
+<project xmlns:au="antlib:org.apache.ant.antunit" xmlns="antlib:org.apache.tools.ant">
+    <taskdef name="mytask" classname="org.nailedtothex.antunitpractice.MyTask">
+        <classpath>
+            <pathelement location="../../../target/classes"/>
+        </classpath>
+    </taskdef>
+    
+    <target name="setUp">
+        <echo>setup</echo>
+    </target>
+
+    <target name="test1">
+        <mytask property="prop"/>
+        <au:assertTrue>
+            <equals arg1="Hello from MyTask" arg2="${prop}"/>
+        </au:assertTrue>
+    </target>
+
+    <target name="tearDown">
+        <echo>tearDown</echo>
+    </target>
+</project>
