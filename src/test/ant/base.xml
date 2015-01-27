@@ -1,10 +1,10 @@
 <project xmlns:au="antlib:org.apache.ant.antunit" xmlns="antlib:org.apache.tools.ant">
     <taskdef name="mytask" classname="org.nailedtothex.antunitpractice.MyTask">
         <classpath>
-            <pathelement location="../../../target/classes"/>
+            <pathelement location="${project.build.outputDirectory}"/>
         </classpath>
     </taskdef>
-    
+
     <target name="setUp">
         <echo>setup</echo>
     </target>

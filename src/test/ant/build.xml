@@ -1,6 +1,9 @@
 <project xmlns:au="antlib:org.apache.ant.antunit" xmlns="antlib:org.apache.tools.ant">
     <au:antunit>
         <file file="${basedir}/src/test/ant/base.xml"/>
+        <propertyset>
+            <propertyref prefix="project"/>
+        </propertyset>
         <au:plainlistener/>
     </au:antunit>
 </project>
