@@ -1,6 +1,6 @@
 <project xmlns:au="antlib:org.apache.ant.antunit" xmlns="antlib:org.apache.tools.ant">
     <au:antunit>
-        <file file="${basedir}/src/test/ant/base.xml"/>
+        <file file="${project.build.testOutputDirectory}/myTaskTest.xml"/>
         <propertyset>
             <propertyref prefix="project"/>
         </propertyset>

@@ -34,7 +34,7 @@
                         <phase>test</phase>
                         <configuration>
                             <target>
-                                <ant antfile="${basedir}/src/test/ant/build.xml"/>
+                                <ant antfile="${project.build.testOutputDirectory}/build.xml"/>
                             </target>
                         </configuration>
                         <goals>
